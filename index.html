@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLES — Calendrier des sessions</title>
+<style>
+  :root {
+    --encre:   #27348B;
+    --encre-d: #1F2B76;
+    --profond: #18224F;
+    --fond:    #F1F4FB;
+    --ligne:   #E5E9F4;
+    --ligne2:  #EDF0F8;
+    --sourd:   #6C7591;
+    --blanc:   #FFFFFF;
+    --b1: #1899D6;
+    --b2: #ED6B1C;
+    --c1: #903189;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Verdana, Arial, sans-serif;
+    background: var(--fond); color: var(--profond);
+    line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 28px; }
+  .hero {
+    background: linear-gradient(165deg, #2E3CA0 0%, #27348B 55%, #1F2B76 100%);
+    color: #fff; padding: 64px 0 96px;
+    border-radius: 0 0 50% 50% / 0 0 36px 36px;
+  }
+  .hero h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.6px; line-height: 1.1; }
+  .spectrum-rule {
+    width: 128px; height: 4px; border-radius: 2px; margin: 20px 0 0;
+    background: linear-gradient(90deg, #1899D6, #80BA27, #FBE200, #ED6B1C, #E81F76, #903189);
+  }
+  .hero p.sub { font-size: 15px; opacity: 0.9; margin-top: 20px; max-width: 540px; line-height: 1.6; }
+  .filters {
+    background: var(--blanc); border-radius: 14px;
+    box-shadow: 0 18px 40px -20px rgba(24,34,79,.45), 0 2px 8px rgba(24,34,79,.06);
+    padding: 18px; margin-top: -56px; position: relative; z-index: 2;
+    display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 12px;
+  }
+  .field { position: relative; }
+  .field input, .field select {
+    width: 100%; font-family: inherit; font-size: 14px; color: var(--profond);
+    background: #fff; border: 1.5px solid var(--ligne); border-radius: 9px;
+    padding: 12px 14px; cursor: pointer; appearance: none; -webkit-appearance: none;
+  }
+  .field input { cursor: text; }
+  .field input::placeholder { color: #9AA2BE; }
+  .field input:focus, .field select:focus { outline: none; border-color: var(--encre); box-shadow: 0 0 0 3px rgba(39,52,139,.10); }
+  .field.select::after {
+    content: ""; position: absolute; right: 14px; top: 50%; margin-top: -4px;
+    width: 8px; height: 8px; border-right: 2px solid var(--encre);
+    border-bottom: 2px solid var(--encre); transform: rotate(45deg); pointer-events: none;
+  }
+  .meta-line {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 10px; padding: 30px 4px 0;
+  }
+  .count { font-size: 14px; color: var(--sourd); }
+  .count b { color: var(--encre); font-weight: 700; font-size: 16px; }
+  .reset {
+    font-size: 12.5px; color: var(--sourd); background: none; border: none; cursor: pointer;
+    font-family: inherit; border-bottom: 1px solid transparent; padding-bottom: 1px;
+  }
+  .reset:hover { color: var(--encre); border-bottom-color: var(--encre); }
+  #liste { margin-top: 8px; }
+  .list-fade { opacity: 0; animation: fade .45s ease forwards; }
+  @keyframes fade { to { opacity: 1; } }
+  .month { margin-top: 38px; }
+  .month-label {
+    display: flex; align-items: center; gap: 14px; margin-bottom: 16px;
+    font-size: 13px; font-weight: 700; color: var(--encre);
+    text-transform: uppercase; letter-spacing: 1.6px;
+  }
+  .month-label::after { content: ""; flex: 1; height: 2px; border-radius: 2px; background: var(--ligne); }
+  .month-label .nb {
+    font-weight: 600; font-size: 11px; color: var(--encre);
+    background: #E4E9F8; border-radius: 999px; padding: 3px 11px;
+    letter-spacing: .3px; text-transform: none;
+  }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+  .card {
+    background: var(--blanc); border-radius: 13px; overflow: hidden;
+    box-shadow: 0 4px 14px -8px rgba(24,34,79,.18);
+    display: flex; flex-direction: column;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 18px 36px -16px rgba(24,34,79,.38); }
+  .card .accent { height: 4px; background: var(--c, var(--encre)); }
+  .card .body { padding: 20px 22px 18px; display: flex; flex-direction: column; gap: 13px; flex: 1; }
+  .card .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .card .date { line-height: 1; }
+  .card .date .n { font-size: 34px; font-weight: 700; color: var(--encre); letter-spacing: -1px; }
+  .card .date .mo { display: block; font-size: 11px; color: var(--sourd); text-transform: uppercase; letter-spacing: 1.3px; margin-top: 5px; font-weight: 600; }
+  .badge { font-size: 11.5px; font-weight: 700; letter-spacing: .4px; color: #fff; background: var(--c, var(--encre)); border-radius: 6px; padding: 4px 10px; white-space: nowrap; }
+  .card .lang { font-size: 17px; font-weight: 700; color: var(--profond); letter-spacing: -.2px; }
+  .card .place { font-size: 13.5px; color: var(--profond); }
+  .card .place small { display: block; color: var(--sourd); font-size: 12.5px; margin-top: 2px; }
+  .card .insc { font-size: 12.5px; color: var(--sourd); line-height: 1.55; border-top: 1px solid var(--ligne2); padding-top: 13px; }
+  .card .insc b { color: var(--profond); font-weight: 700; }
+  .card .foot { margin-top: auto; padding-top: 2px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .card a.more {
+    display: inline-block; font-size: 12.5px; color: var(--encre); font-weight: 700;
+    text-decoration: none; border: 1.5px solid var(--encre); border-radius: 999px;
+    padding: 7px 16px; transition: all .16s ease;
+  }
+  .card a.more:hover { background: var(--encre); color: #fff; }
+  .card a.mail { font-size: 12px; color: var(--sourd); text-decoration: none; word-break: break-all; }
+  .card a.mail:hover { color: var(--encre); }
+  .card .nolink { font-size: 12px; color: #AEB6CF; }
+  .loadmore {
+    display: block; margin: 40px auto 0; font-family: inherit;
+    font-size: 13.5px; font-weight: 700; color: #fff; letter-spacing: .3px;
+    background: var(--encre); border: none; border-radius: 999px;
+    padding: 13px 34px; cursor: pointer; transition: background .18s ease;
+    box-shadow: 0 10px 24px -12px rgba(39,52,139,.6);
+  }
+  .loadmore:hover { background: #1F2B76; }
+  .empty { padding: 64px 0; text-align: center; color: var(--sourd); font-size: 14px; line-height: 1.7; }
+  .empty strong { color: var(--encre); font-weight: 700; }
+  footer {
+    margin-top: 56px; padding: 26px 0 44px; border-top: 1px solid var(--ligne);
+    font-size: 11.5px; color: var(--sourd);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  @media (max-width: 860px) { .filters { grid-template-columns: 1fr 1fr; } .field.search { grid-column: 1/-1; } }
+  @media (max-width: 600px) { .hero { padding: 48px 0 84px; } .hero h1 { font-size: 28px; } .grid { grid-template-columns: 1fr; } }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } .list-fade { opacity: 1; } .card:hover { transform: none; } }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Calendrier des sessions CLES</h1>
+    <div class="spectrum-rule" aria-hidden="true"></div>
+    <p class="sub">Trouvez une session près de chez vous. Les dates sont déclarées par les centres d'examen et mises à jour automatiquement.</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="filters" role="search">
+    <div class="field search"><input type="search" id="f-q" placeholder="Ville, université, langue…" aria-label="Recherche"></div>
+    <div class="field select">
+      <select id="f-langue" aria-label="Langue">
+        <option value="">Toutes les langues</option>
+        <option>Allemand</option><option>Anglais</option><option>Arabe</option>
+        <option>Chinois</option><option>Espagnol</option><option>FLE</option>
+        <option>Italien</option><option>Portugais</option><option>Russe</option>
+      </select>
+    </div>
+    <div class="field select">
+      <select id="f-niveau" aria-label="Niveau">
+        <option value="">Tous les niveaux</option>
+        <option>B1</option><option>B2</option><option>C1</option>
+      </select>
+    </div>
+    <div class="field select">
+      <select id="f-ville" aria-label="Ville">
+        <option value="">Toutes les villes</option>
+        <option>Dunkerque</option><option>Lyon</option><option>Nanterre</option>
+        <option>Rennes</option><option>Rouen</option>
+      </select>
+    </div>
+    <div class="field select">
+      <select id="f-mois" aria-label="Mois"><option value="">Tous les mois</option></select>
+    </div>
+  </div>
+
+  <div class="meta-line">
+    <span class="count" id="count"></span>
+    <button class="reset" id="reset">Réinitialiser les filtres</button>
+  </div>
+
+  <div id="liste"></div>
+  <button class="loadmore" id="loadmore" hidden>Afficher plus de sessions</button>
+
+  <footer>
+    <span>Données issues des déclarations des centres CLES — www.certification-cles.fr</span>
+    <span id="maj"></span>
+  </footer>
+</div>
+
+<script>
+/*
+  SOURCE : rapport Moodle id=73 exporté le 23/06/2026 — 59 sessions de 5 centres.
+  En production, remplacer ce tableau par :
+    fetch('sessions.json').then(r=>r.json()).then(data=>{ sessions=data; init(); });
+  Le fichier sessions.json est généré quotidiennement par Make
+  (login Moodle → GET CSV → transformation → dépôt GitHub Pages).
+*/
+const sessions = [{"langue":"Arabe","niveau":"B1","d":"2026-11-06","insc":"05/10/2026 au 18/10/2026","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Arabe","niveau":"B2","d":"2026-11-06","insc":"05/10/2026 au 18/10/2026","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Anglais","niveau":"B2","d":"2026-11-07","insc":"21/09/2026 au 20/10/2026","ville":"Rennes","univ":"Université de Rennes","url":"https://langues.univ-rennes.fr/","contact":"andrea.spaeth-balanant@univ-rennes.fr"},{"langue":"Anglais","niveau":"B2","d":"2026-11-07","insc":"05/10/2026 au 18/10/2026","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Anglais","niveau":"B2","d":"2026-11-13","insc":"Inscriptions ouvertes — contacter le centre","ville":"Dunkerque","univ":"Université du Littoral Côte d'Opale","url":"https://crl.univ-littoral.fr/","contact":"lansad@univ-littoral.fr"},{"langue":"Anglais","niveau":"B2","d":"2026-11-13","insc":"05/10/2026 au 18/10/2026","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Anglais","niveau":"C1","d":"2026-11-14","insc":"05/10/2026 au 18/10/2026","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Espagnol","niveau":"B2","d":"2026-11-14","insc":"05/10/2026 au 18/10/2026","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Espagnol","niveau":"B2","d":"2026-11-14","insc":"01/09/2026 au 23/10/2026","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Espagnol","niveau":"B2","d":"2026-11-24","insc":"14/09/2026 au 08/10/2026","ville":"Rouen","univ":"Université de Rouen Normandie","url":"https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/","contact":""},{"langue":"Espagnol","niveau":"B1","d":"2026-11-26","insc":"14/09/2026 au 08/10/2026","ville":"Rouen","univ":"Université de Rouen Normandie","url":"https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/","contact":""},{"langue":"Italien","niveau":"B1","d":"2026-11-26","insc":"14/09/2026 au 08/10/2026","ville":"Rouen","univ":"Université de Rouen Normandie","url":"https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/","contact":""},{"langue":"Anglais","niveau":"B2","d":"2026-11-28","insc":"01/09/2026 au 13/11/2026","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Espagnol","niveau":"B2","d":"2026-12-04","insc":"19/10/2026 au 20/11/2026","ville":"Rennes","univ":"Université de Rennes","url":"https://langues.univ-rennes.fr/","contact":"andrea.spaeth-balanant@univ-rennes.fr"},{"langue":"Anglais","niveau":"B2","d":"2026-12-04","insc":"14/09/2026 au 08/10/2026","ville":"Rouen","univ":"Université de Rouen Normandie","url":"https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/","contact":""},{"langue":"Allemand","niveau":"B2","d":"2026-12-11","insc":"31/10/2026 au 30/11/2026","ville":"Rennes","univ":"Université de Rennes","url":"https://langues.univ-rennes.fr/","contact":"andrea.spaeth-balanant@univ-rennes.fr"},{"langue":"Allemand","niveau":"B1","d":"2026-12-11","insc":"01/09/2026 au 27/11/2026","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Chinois","niveau":"B1","d":"2026-12-11","insc":"01/09/2026 au 27/11/2026","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Portugais","niveau":"B1","d":"2026-12-11","insc":"01/09/2026 au 27/11/2026","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Russe","niveau":"B1","d":"2026-12-11","insc":"01/09/2026 au 27/11/2026","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Anglais","niveau":"B1","d":"2027-01-14","insc":"Inscriptions ouvertes — contacter le centre","ville":"Dunkerque","univ":"Université du Littoral Côte d'Opale","url":"https://crl.univ-littoral.fr/","contact":"lansad@univ-littoral.fr"},{"langue":"Anglais","niveau":"B2","d":"2027-01-16","insc":"01/12/2026 au 04/01/2027","ville":"Rennes","univ":"Université de Rennes","url":"https://langues.univ-rennes.fr/","contact":"andrea.spaeth-balanant@univ-rennes.fr"},{"langue":"Allemand","niveau":"B2","d":"2027-01-19","insc":"Inscriptions ouvertes — contacter le centre","ville":"Dunkerque","univ":"Université du Littoral Côte d'Opale","url":"https://crl.univ-littoral.fr/","contact":"lansad@univ-littoral.fr"},{"langue":"Espagnol","niveau":"B2","d":"2027-01-19","insc":"Inscriptions ouvertes — contacter le centre","ville":"Dunkerque","univ":"Université du Littoral Côte d'Opale","url":"https://crl.univ-littoral.fr/","contact":"lansad@univ-littoral.fr"},{"langue":"Anglais","niveau":"B2","d":"2027-01-30","insc":"01/09/2026 au 15/01/2027","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Anglais","niveau":"C1","d":"2027-02-06","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Espagnol","niveau":"C1","d":"2027-02-06","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"FLE","niveau":"C1","d":"2027-02-06","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Anglais","niveau":"B2","d":"2027-02-12","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Russe","niveau":"B1","d":"2027-02-12","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Russe","niveau":"B2","d":"2027-02-12","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Allemand","niveau":"B1","d":"2027-02-13","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Allemand","niveau":"B2","d":"2027-02-13","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Chinois","niveau":"B1","d":"2027-02-13","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Espagnol","niveau":"B1","d":"2027-02-13","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Espagnol","niveau":"B2","d":"2027-02-13","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"FLE","niveau":"B1","d":"2027-02-13","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"FLE","niveau":"B2","d":"2027-02-13","insc":"18/01/2027 au 31/01/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Espagnol","niveau":"B2","d":"2027-02-13","insc":"01/09/2026 au 29/01/2027","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Anglais","niveau":"B1","d":"2027-02-25","insc":"Inscriptions ouvertes — contacter le centre","ville":"Dunkerque","univ":"Université du Littoral Côte d'Opale","url":"https://crl.univ-littoral.fr/","contact":"lansad@univ-littoral.fr"},{"langue":"Allemand","niveau":"B1","d":"2027-02-26","insc":"Inscriptions ouvertes — contacter le centre","ville":"Dunkerque","univ":"Université du Littoral Côte d'Opale","url":"https://crl.univ-littoral.fr/","contact":"lansad@univ-littoral.fr"},{"langue":"Espagnol","niveau":"B1","d":"2027-02-26","insc":"Inscriptions ouvertes — contacter le centre","ville":"Dunkerque","univ":"Université du Littoral Côte d'Opale","url":"https://crl.univ-littoral.fr/","contact":"lansad@univ-littoral.fr"},{"langue":"Allemand","niveau":"B2","d":"2027-02-27","insc":"01/09/2026 au 12/02/2027","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Anglais","niveau":"C1","d":"2027-02-27","insc":"01/09/2026 au 12/02/2027","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Chinois","niveau":"B1","d":"2027-02-27","insc":"01/09/2026 au 12/02/2027","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Portugais","niveau":"B2","d":"2027-02-27","insc":"01/09/2026 au 12/02/2027","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Russe","niveau":"B2","d":"2027-02-27","insc":"01/09/2026 au 12/02/2027","ville":"Nanterre","univ":"Université Paris Nanterre","url":"https://mdl.parisnanterre.fr/inscription-aux-certifications","contact":"mdl@lce.parisnanterre.fr"},{"langue":"Allemand","niveau":"B1","d":"2027-03-10","insc":"04/01/2027 au 28/01/2027","ville":"Rouen","univ":"Université de Rouen Normandie","url":"https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/","contact":""},{"langue":"Espagnol","niveau":"B1","d":"2027-03-10","insc":"04/01/2027 au 28/01/2027","ville":"Rouen","univ":"Université de Rouen Normandie","url":"https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/","contact":""},{"langue":"Anglais","niveau":"B2","d":"2027-03-17","insc":"04/01/2027 au 28/01/2027","ville":"Rouen","univ":"Université de Rouen Normandie","url":"https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/","contact":""},{"langue":"Anglais","niveau":"B2","d":"2027-03-20","insc":"08/02/2027 au 28/02/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Italien","niveau":"B1","d":"2027-03-20","insc":"08/02/2027 au 28/02/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Italien","niveau":"B2","d":"2027-03-20","insc":"08/02/2027 au 28/02/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Portugais","niveau":"B1","d":"2027-03-20","insc":"08/02/2027 au 28/02/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Portugais","niveau":"B2","d":"2027-03-20","insc":"08/02/2027 au 28/02/2027","ville":"Lyon","univ":"Université Lyon 2 Lumière","url":"","contact":"vanessa.robles@univ-lyon2.fr"},{"langue":"Espagnol","niveau":"B2","d":"2027-03-26","insc":"04/01/2027 au 28/01/2027","ville":"Rouen","univ":"Université de Rouen Normandie","url":"https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/","contact":""},{"langue":"Italien","niveau":"B2","d":"2027-03-26","insc":"04/01/2027 au 28/01/2027","ville":"Rouen","univ":"Université de Rouen Normandie","url":"https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/","contact":""},{"langue":"Anglais","niveau":"B2","d":"2027-04-10","insc":"26/02/2027 au 26/03/2027","ville":"Rennes","univ":"Université de Rennes","url":"https://langues.univ-rennes.fr/","contact":"andrea.spaeth-balanant@univ-rennes.fr"},{"langue":"Anglais","niveau":"C1","d":"2027-06-03","insc":"Inscriptions ouvertes — contacter le centre","ville":"Dunkerque","univ":"Université du Littoral Côte d'Opale","url":"https://crl.univ-littoral.fr/","contact":"lansad@univ-littoral.fr"}];
+
+const LVL_COLOR = {"B1":"#1899D6","B2":"#ED6B1C","C1":"#903189"};
+const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+const MOIS_AB = ["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
+const PAGE = 48; let shown = PAGE;
+
+const selM = document.getElementById("f-mois");
+[...new Set(sessions.map(s=>s.d.slice(0,7)))].forEach(m=>{
+  const[y,mm]=m.split("-");
+  selM.insertAdjacentHTML("beforeend",`<option value="${m}">${MOIS[+mm-1]} ${y}</option>`);
+});
+
+function filtered(){
+  const q=document.getElementById("f-q").value.trim().toLowerCase();
+  const l=document.getElementById("f-langue").value;
+  const n=document.getElementById("f-niveau").value;
+  const v=document.getElementById("f-ville").value;
+  const m=selM.value;
+  return sessions.filter(s=>
+    (!l||s.langue===l)&&(!n||s.niveau===n)&&(!v||s.ville===v)&&(!m||s.d.startsWith(m))&&
+    (!q||s.ville.toLowerCase().includes(q)||s.univ.toLowerCase().includes(q)||s.langue.toLowerCase().includes(q)));
+}
+
+function render(fp){
+  const out=filtered();
+  document.getElementById("count").innerHTML=`<b>${out.length}</b> session${out.length>1?"s":""} trouvée${out.length>1?"s":""}`;
+  const liste=document.getElementById("liste");
+  if(!out.length){
+    liste.innerHTML='<div class="empty"><strong>Aucune session ne correspond à ces critères.</strong><br>De nouvelles sessions sont déclarées régulièrement par les centres d\'examen.</div>';
+    document.getElementById("loadmore").hidden=true; return;
+  }
+  const mc={};
+  out.forEach(s=>{const k=s.d.slice(0,7);mc[k]=(mc[k]||0)+1;});
+  let html="",cur="";
+  out.slice(0,shown).forEach(s=>{
+    const dt=new Date(s.d+"T12:00:00"),k=s.d.slice(0,7),col=LVL_COLOR[s.niveau]||"#27348B";
+    if(k!==cur){
+      if(cur) html+="</div></div>";
+      html+=`<div class="month"><div class="month-label">${MOIS[dt.getMonth()]} ${dt.getFullYear()} <span class="nb">${mc[k]} session${mc[k]>1?"s":""}</span></div><div class="grid">`;
+      cur=k;
+    }
+    html+=`<div class="card" style="--c:${col}">
+      <div class="accent"></div>
+      <div class="body">
+        <div class="top">
+          <div class="date"><span class="n">${dt.getDate()}</span><span class="mo">${MOIS_AB[dt.getMonth()]}</span></div>
+          <span class="badge">${s.niveau}</span>
+        </div>
+        <div class="lang">${s.langue}</div>
+        <div class="place">${s.ville}<small>${s.univ}</small></div>
+        <div class="insc">Inscriptions<br><b>${s.insc}</b></div>
+        <div class="foot">
+          ${s.url?`<a class="more" href="${s.url}" target="_blank" rel="noopener">Détails</a>`:""}
+          ${s.contact?`<a class="mail" href="mailto:${s.contact}">${s.contact}</a>`:""}
+          ${!s.url&&!s.contact?`<span class="nolink">Contacter le centre</span>`:""}
+        </div>
+      </div>
+    </div>`;
+  });
+  html+="</div></div>";
+  liste.innerHTML=html;
+  if(fp) liste.classList.add("list-fade");
+  document.getElementById("loadmore").hidden=(shown>=out.length);
+}
+
+["f-q","f-langue","f-niveau","f-ville","f-mois"].forEach(id=>
+  document.getElementById(id).addEventListener("input",()=>{shown=PAGE;render(false);}));
+document.getElementById("loadmore").addEventListener("click",()=>{shown+=PAGE;render(false);});
+document.getElementById("reset").addEventListener("click",()=>{
+  ["f-q","f-langue","f-niveau","f-ville","f-mois"].forEach(id=>document.getElementById(id).value="");
+  shown=PAGE;render(false);
+});
+document.getElementById("maj").textContent="Mis à jour le "+new Date().toLocaleDateString("fr-FR",{day:"numeric",month:"long",year:"numeric"});
+render(true);
+</script>
+</body>
+</html>
