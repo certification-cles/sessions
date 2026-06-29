@@ -32,6 +32,12 @@
     border-radius: 0 0 50% 50% / 0 0 36px 36px;
   }
   .hero h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.6px; line-height: 1.1; }
+  .logo-pill {
+    display: inline-block; background: #fff; border-radius: 12px;
+    padding: 12px 18px; margin-bottom: 26px;
+    box-shadow: 0 8px 24px -12px rgba(0,0,0,0.3);
+  }
+  .logo-pill img { display: block; height: 46px; width: auto; }
   .spectrum-rule {
     width: 128px; height: 4px; border-radius: 2px; margin: 20px 0 0;
     background: linear-gradient(90deg, #1899D6, #80BA27, #FBE200, #ED6B1C, #E81F76, #903189);
@@ -47,7 +53,8 @@
   .field select {
     width: 100%; font-family: inherit; font-size: 14px; color: var(--profond);
     background: #fff; border: 1.5px solid var(--ligne); border-radius: 9px;
-    padding: 12px 14px; cursor: pointer; appearance: none; -webkit-appearance: none;
+    padding: 12px 38px 12px 14px; cursor: pointer; appearance: none; -webkit-appearance: none;
+    text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
   }
   .field select:focus { outline: none; border-color: var(--encre); box-shadow: 0 0 0 3px rgba(39,52,139,.10); }
   .field.select::after {
@@ -121,14 +128,6 @@
   .card a.mail { color: var(--encre); background: #fff; border: 1.5px solid var(--encre); }
   .card a.mail:hover { background: var(--encre); color: #fff; }
   .card .nolink { flex: 1; text-align: center; font-size: 12px; color: #AEB6CF; padding: 8px 12px; }
-  .loadmore {
-    display: block; margin: 40px auto 0; font-family: inherit;
-    font-size: 13.5px; font-weight: 700; color: #fff; letter-spacing: .3px;
-    background: var(--encre); border: none; border-radius: 999px;
-    padding: 13px 34px; cursor: pointer; transition: background .18s ease;
-    box-shadow: 0 10px 24px -12px rgba(39,52,139,.6);
-  }
-  .loadmore:hover { background: #1F2B76; }
   .empty, .loading { padding: 64px 0; text-align: center; color: var(--sourd); font-size: 14px; line-height: 1.7; }
   .empty strong { color: var(--encre); font-weight: 700; }
   .spinner {
@@ -143,7 +142,19 @@
     display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
   }
   @media (max-width: 860px) { .filters { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 600px) { .hero { padding: 48px 0 84px; } .hero h1 { font-size: 28px; } .grid { grid-template-columns: 1fr; } }
+  @media (max-width: 600px) {
+    .wrap { padding: 0 18px; }
+    .hero { padding: 40px 0 80px; border-radius: 0 0 0 0 / 0 0 24px 24px; }
+    .hero h1 { font-size: 26px; }
+    .logo-pill { padding: 10px 14px; margin-bottom: 20px; }
+    .logo-pill img { height: 38px; }
+    .hero p.sub { font-size: 14px; margin-top: 16px; }
+    .filters { grid-template-columns: 1fr 1fr; gap: 10px; padding: 14px; margin-top: -48px; }
+    .field select { padding: 11px 34px 11px 12px; font-size: 13.5px; }
+    .grid { grid-template-columns: 1fr; }
+    .meta-line { padding-top: 24px; }
+    footer { flex-direction: column; gap: 4px; }
+  }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } .list-fade { opacity: 1; } .card:hover { transform: none; } .spinner { animation: spin 1.2s linear infinite; } }
 </style>
 </head>
@@ -151,6 +162,7 @@
 
 <div class="hero">
   <div class="wrap">
+    <div class="logo-pill"><img src="logo-cles.png" alt="CLES — Certificat de compétences en langues de l'enseignement supérieur"></div>
     <h1>Calendrier des sessions CLES</h1>
     <div class="spectrum-rule" aria-hidden="true"></div>
     <p class="sub">Trouvez une session près de chez vous. Les dates sont déclarées par les centres d'examen et mises à jour automatiquement.</p>
@@ -184,7 +196,6 @@
   <div id="liste">
     <div class="loading"><div class="spinner"></div>Chargement des sessions…</div>
   </div>
-  <button class="loadmore" id="loadmore" hidden>Afficher plus de sessions</button>
 
   <footer>
     <span>Données issues des déclarations des centres CLES — www.certification-cles.fr</span>
@@ -202,8 +213,6 @@ const CSV_URL = "sessions.csv";
 const LVL_COLOR = {"B1":"#1899D6","B2":"#ED6B1C","C1":"#903189"};
 const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 const MOIS_AB = ["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
-const PAGE = 48;
-let shown = PAGE;
 let sessions = [];
 
 const MINUSCULES = ["de","du","des","d","et","en","la","le","les","l","au","aux","sur","à"];
@@ -309,12 +318,12 @@ function render(fp){
   const liste=document.getElementById("liste");
   if(!out.length){
     liste.innerHTML='<div class="empty"><strong>Aucune session ne correspond à ces critères.</strong><br>De nouvelles sessions sont déclarées régulièrement par les centres d\'examen.</div>';
-    document.getElementById("loadmore").hidden=true; return;
+    return;
   }
   const mc={};
   out.forEach(s=>{const k=s.d.slice(0,7);mc[k]=(mc[k]||0)+1;});
   let html="",cur="";
-  out.slice(0,shown).forEach(s=>{
+  out.forEach(s=>{
     const dt=new Date(s.d+"T12:00:00"),k=s.d.slice(0,7),col=LVL_COLOR[s.niveau]||"#27348B";
     if(k!==cur){
       if(cur) html+="</div></div>";
@@ -347,15 +356,13 @@ function render(fp){
   html+="</div></div>";
   liste.innerHTML=html;
   if(fp) liste.classList.add("list-fade");
-  document.getElementById("loadmore").hidden=(shown>=out.length);
 }
 
 ["f-langue","f-niveau","f-ville","f-mois"].forEach(id=>
-  document.getElementById(id).addEventListener("change",()=>{shown=PAGE;render(false);}));
-document.getElementById("loadmore").addEventListener("click",()=>{shown+=PAGE;render(false);});
+  document.getElementById(id).addEventListener("change",()=>{render(false);}));
 document.getElementById("reset").addEventListener("click",()=>{
   ["f-langue","f-niveau","f-ville","f-mois"].forEach(id=>document.getElementById(id).value="");
-  shown=PAGE;render(false);
+  render(false);
 });
 
 // Chargement du CSV
