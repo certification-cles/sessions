@@ -1,9 +1,6 @@
 ﻿"langue et niveau","dates d'inscription","date de session","université organisatrice","site d'information",contact
-"Allemand - B1","01/12/2026 au 15/01/2026",20/01/2026,"UNIVERSITÉ MARIE ET LOUIS PASTEUR",,
-"Espagnol - B1","01/12/2026 au 15/01/2026",20/01/2026,"UNIVERSITÉ MARIE ET LOUIS PASTEUR",,
-"Russe - B1","01/02/2026 au 08/04/2026",20/04/2026,"UNIVERSITÉ MARIE ET LOUIS PASTEUR",,
-"Russe - B2","01/03/2026 au 08/04/2026",20/04/2026,"UNIVERSITÉ MARIE ET LOUIS PASTEUR",,
 "Anglais - B2","01/09/2026 au 30/09/2026",10/10/2026,"SORBONNE UNIVERSITÉ",https://sciences.sorbonne-universite.fr/formation-sciences/offre-de-formation/enseignement-des-langues/cles-certificat-de-competence-en,frederic.menu@sorbonne-universite.fr
+"Anglais - B2","01/10/2026 au 30/10/2026",05/11/2026,"UNIVERSITÉ D'AIX MARSEILLE",,sul-certifications@univ-amu.fr
 "Arabe - B1","05/10/2026 au 18/10/2026",06/11/2026,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
 "Arabe - B2","05/10/2026 au 18/10/2026",06/11/2026,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
 "Allemand - B2","07/09/2026 au 17/10/2026",07/11/2026,"SORBONNE UNIVERSITÉ",https://sciences.sorbonne-universite.fr/formation-sciences/offre-de-formation/enseignement-des-langues/cles-certificat-de-competence-en,frederic.menu@sorbonne-universite.fr
@@ -13,49 +10,77 @@
 "Anglais - B2","05/10/2026 au 18/10/2026",07/11/2026,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
 "Anglais - B2","19/06/2026 au 19/06/2026",13/11/2026,"UNIVERSITÉ DU LITTORAL COTE D'OPALE (ULCO)",https://crl.univ-littoral.fr/,lansad@univ-littoral.fr
 "Anglais - B2","05/10/2026 au 18/10/2026",13/11/2026,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
-"Anglais - B2","15/09/2026 au 16/10/2026",14/11/2026,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,pole.langues.certifications@univ-brest.fr
+"Anglais - B2","15/09/2026 au 16/10/2026",14/11/2026,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,cles.pole.langues@univ-brest.fr
 "Anglais - C1","05/10/2026 au 18/10/2026",14/11/2026,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
 "Espagnol - B2","05/10/2026 au 18/10/2026",14/11/2026,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
 "Espagnol - B2","01/09/2026 au 23/10/2026",14/11/2026,"UNIVERSITÉ PARIS NANTERRE",https://mdl.parisnanterre.fr/inscription-aux-certifications,mdl@lce.parisnanterre.fr
+"Portugais - B2","15/10/2026 au 10/11/2026",19/11/2026,"UNIVERSITÉ D'AIX MARSEILLE",,sul-certifications@univ-amu.fr
 "Allemand - B2","14/09/2026 au 23/10/2026",19/11/2026,"UNIVERSITÉ DE POITIERS",,
 "Russe - B1","14/09/2026 au 23/10/2026",19/11/2026,"UNIVERSITÉ DE POITIERS",,
 "Espagnol - B2","14/09/2026 au 08/10/2026",24/11/2026,"UNIVERSITÉ DE ROUEN NORMANDIE",https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/,cles.univ-rouen.fr
+"Anglais - B1","🔒 Inscriptions réservées",26/11/2026,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,cles.pole.langues@univ-brest.fr
 "Espagnol - B1","14/09/2026 au 08/10/2026",26/11/2026,"UNIVERSITÉ DE ROUEN NORMANDIE",https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/,cles.univ-rouen.fr
 "Italien - B1","14/09/2026 au 08/10/2026",26/11/2026,"UNIVERSITÉ DE ROUEN NORMANDIE",https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/,cles.univ-rouen.fr
+"Anglais - B2","🔒 Inscriptions réservées",27/11/2026,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
 "Anglais - B2","01/09/2026 au 13/11/2026",28/11/2026,"UNIVERSITÉ PARIS NANTERRE",https://mdl.parisnanterre.fr/inscription-aux-certifications,mdl@lce.parisnanterre.fr
-"Espagnol - B2","15/09/2026 au 06/11/2026",04/12/2026,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,pole.langues.certifications@univ-brest.fr
+"Espagnol - B2","15/09/2026 au 06/11/2026",04/12/2026,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,cles.pole.langues@univ-brest.fr
 "Espagnol - B2","19/10/2026 au 20/11/2026",04/12/2026,"UNIVERSITÉ DE RENNES",https://langues.univ-rennes.fr/,"andrea.spaeth-balanant@univ-rennes.fr; marine.clabe@univ-rennes.fr; benedicte.coadou@univ-rennes.fr"
 "Anglais - B2","14/09/2026 au 08/10/2026",04/12/2026,"UNIVERSITÉ DE ROUEN NORMANDIE",https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/,cles.univ-rouen.fr
 "Anglais - B2","07/09/2026 au 15/11/2026",05/12/2026,"SORBONNE UNIVERSITÉ",https://sciences.sorbonne-universite.fr/formation-sciences/offre-de-formation/enseignement-des-langues/cles-certificat-de-competence-en,frederic.menu@sorbonne-universite.fr
+"Anglais - B2","03/11/2026 au 10/11/2026",05/12/2026,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Allemand - B1","03/07/2026 au 01/11/2026",10/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Allemand - B2","03/07/2026 au 01/11/2026",10/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Anglais - B1","03/07/2026 au 01/11/2026",10/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Anglais - B2","03/07/2026 au 01/11/2026",10/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Espagnol - B1","03/07/2026 au 01/11/2026",10/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Espagnol - B2","03/07/2026 au 01/11/2026",10/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Italien - B1","03/07/2026 au 01/11/2026",10/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Italien - B2","03/07/2026 au 01/11/2026",10/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Portugais - B1","03/07/2026 au 01/11/2026",10/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Portugais - B2","03/07/2026 au 01/11/2026",10/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Anglais - B2","02/07/2026 au 10/11/2026",10/12/2026,"UNIVERSITÉ COTE D'AZUR",,sctl@univ-cotedazur.fr
 "Anglais - B2","01/11/2026 au 16/11/2026",10/12/2026,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Allemand - B2","31/10/2026 au 30/11/2026",11/12/2026,"UNIVERSITÉ DE RENNES",https://langues.univ-rennes.fr/,andrea.spaeth-balanant@univ-rennes.fr
 "Allemand - B1","01/09/2026 au 27/11/2026",11/12/2026,"UNIVERSITÉ PARIS NANTERRE",https://mdl.parisnanterre.fr/inscription-aux-certifications,mdl@lce.parisnanterre.fr
 "Chinois - B1","01/09/2026 au 27/11/2026",11/12/2026,"UNIVERSITÉ PARIS NANTERRE",mdl@lce.parisnanterre.fr,https://mdl.parisnanterre.fr/inscription-aux-certifications
 "Portugais - B1","01/09/2026 au 27/11/2026",11/12/2026,"UNIVERSITÉ PARIS NANTERRE",https://mdl.parisnanterre.fr/inscription-aux-certifications,mdl@lce.parisnanterre.fr
 "Russe - B1","01/09/2026 au 27/11/2026",11/12/2026,"UNIVERSITÉ PARIS NANTERRE",https://mdl.parisnanterre.fr/inscription-aux-certifications,mdl@lce.parisnanterre.fr
+"Allemand - B2","05/10/2026 au 15/11/2026",12/12/2026,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/," certifications-langues@unistra.fr"
+"Anglais - B2","05/10/2026 au 15/11/2026",12/12/2026,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
+"Anglais - C1","03/07/2026 au 01/11/2026",14/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Espagnol - C1","03/07/2026 au 01/11/2026",14/12/2026,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
 "Anglais - B2","14/09/2026 au 14/11/2026",14/12/2026,"UNIVERSITÉ DE CORSE PASQUALE PAOLI",,clic@univ-corse.fr
 "Espagnol - B2","14/09/2026 au 14/11/2026",14/12/2026,"UNIVERSITÉ DE CORSE PASQUALE PAOLI",,clic@univ-corse.fr
 "Italien - B2","14/09/2026 au 14/11/2026",14/12/2026,"UNIVERSITÉ DE CORSE PASQUALE PAOLI",,clic@univ-corse.fr
 "Anglais - B2","05/10/2026 au 05/12/2026",05/01/2027,"UNIVERSITÉ DE CORSE PASQUALE PAOLI",,clic@univ-corse.fr
-"Espagnol - B1","15/09/2026 au 11/12/2026",07/01/2027,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,pole.langues.certifications@univ-brest.fr
+"Espagnol - B1","15/09/2026 au 11/12/2026",07/01/2027,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,cles.pole.langues@univ-brest.fr
+"Anglais - B2","07/09/2027 au 22/10/2027",08/01/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
 "Allemand - B1","16/11/2026 au 09/12/2026",11/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Allemand - B2","16/11/2026 au 09/12/2026",11/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Italien - B1","16/11/2026 au 09/12/2026",11/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Italien - B2","16/11/2026 au 09/12/2026",11/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Russe - B1","16/11/2026 au 09/12/2026",11/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Russe - B2","16/11/2026 au 09/12/2026",11/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
-"Anglais - C1","16/11/2026 au 09/12/2026",12/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
-"Espagnol - C1","16/11/2026 au 09/12/2026",13/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
+"Espagnol - C1","16/11/2026 au 09/12/2026",12/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
+"Anglais - C1","16/11/2026 au 09/12/2026",13/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Anglais - B1","19/06/2026 au 19/06/2026",14/01/2027,"UNIVERSITÉ DU LITTORAL COTE D'OPALE (ULCO)",https://crl.univ-littoral.fr/,lansad@univ-littoral.fr
 "Espagnol - B1","16/11/2026 au 09/12/2026",14/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Espagnol - B2","16/11/2026 au 09/12/2026",14/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
+"Espagnol - B2","05/10/2026 au 15/11/2026",15/01/2027,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
 "Anglais - B2","16/11/2026 au 09/12/2026",15/01/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
-"Anglais - B2","15/09/2026 au 15/12/2026",16/01/2027,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,pole.langues.certifications@univ-brest.fr
+"Anglais - B2","15/09/2026 au 15/12/2026",16/01/2027,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,cles.pole.langues@univ-brest.fr
 "Anglais - B2","01/12/2026 au 04/01/2027",16/01/2027,"UNIVERSITÉ DE RENNES",https://langues.univ-rennes.fr/,andrea.spaeth-balanant@univ-rennes.fr
 "Allemand - B2","19/06/2026 au 19/06/2026",19/01/2027,"UNIVERSITÉ DU LITTORAL COTE D'OPALE (ULCO)",https://crl.univ-littoral.fr/,lansad@univ-littoral.fr
 "Espagnol - B2","19/06/2026 au 19/06/2026",19/01/2027,"UNIVERSITÉ DU LITTORAL COTE D'OPALE (ULCO)",https://crl.univ-littoral.fr/,lansad@univ-littoral.fr
+"Allemand - B1","01/12/2027 au 15/01/2027",20/01/2027,"UNIVERSITÉ MARIE ET LOUIS PASTEUR",,
+"Espagnol - B1","01/12/2027 au 15/01/2027",20/01/2027,"UNIVERSITÉ MARIE ET LOUIS PASTEUR",,
 "Anglais - B1","02/11/2026 au 07/12/2026",21/01/2027,"UNIVERSITÉ DE POITIERS",,
 "Anglais - B2","02/11/2026 au 07/12/2026",28/01/2027,"UNIVERSITÉ DE POITIERS",,
+"Anglais - B2","07/09/2027 au 22/10/2027",29/01/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
+"Allemand - B1","10/12/2026 au 17/12/2026",29/01/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Espagnol - B1","16/11/2026 au 14/12/2026",29/01/2027,"UNIVERSITÉ DE MONTPELLIER PAUL-VALERY",cles.umpv.fr,cler@umpv.fr
+"Espagnol - B1","16/11/2026 au 14/12/2026",29/01/2027,"UNIVERSITÉ DE PERPIGNAN VIA DOMITIA (UPVD)",,scoclc@univ-perp.fr
+"Anglais - C1","10/12/2026 au 17/12/2026",30/01/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
 "Anglais - B2","05/11/2026 au 19/11/2026",30/01/2027,"UNIVERSITÉ DE LORRAINE",https://lansad.univ-lorraine.fr/cles/,lansad-certification-contact@univ-lorraine.fr
 "Espagnol - B2","05/11/2026 au 19/11/2026",30/01/2027,"UNIVERSITÉ DE LORRAINE","https://lansad.univ-lorraine.fr/cles/ ",lansad-certification-contact@univ-lorraine.fr
 "Italien - B2","05/11/2026 au 19/11/2026",30/01/2027,"UNIVERSITÉ DE LORRAINE",https://lansad.univ-lorraine.fr/cles/,lansad-certification-contact@univ-lorraine.fr
@@ -63,12 +88,21 @@
 "Espagnol - B2","02/11/2026 au 07/12/2026",04/02/2027,"UNIVERSITÉ DE POITIERS",,
 "Allemand - B2","04/11/2026 au 27/11/2026",04/02/2027,"UNIVERSITÉ HAUTE ALSACE",,aurore.gadeix@uha.fr
 "Anglais - B2","04/11/2026 au 27/11/2026",04/02/2027,"UNIVERSITÉ HAUTE ALSACE",,aurore.gadeix@uha.fr
+"Anglais - B1","07/09/2027 au 22/11/2027",05/02/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
+"Anglais - B1","05/01/2027 au 11/01/2027",05/02/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Anglais - B2","05/01/2027 au 11/01/2027",05/02/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
 "Italien - B2","02/11/2026 au 07/12/2026",05/02/2027,"UNIVERSITÉ DE POITIERS",,
+"Espagnol - B2","05/01/2027 au 11/01/2027",06/02/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
 "Anglais - C1","18/01/2027 au 31/01/2027",06/02/2027,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
 "Espagnol - C1","18/01/2027 au 31/01/2027",06/02/2027,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
 "FLE - C1","18/01/2027 au 31/01/2027",06/02/2027,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
 "Allemand - B2","24/06/2026 au 24/06/2026",08/02/2027,"UNIVERSITÉ RENNES II HAUTE BRETAGNE",,
-"Anglais - B2","15/09/2026 au 19/01/2027",12/02/2027,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,pole.langues.certifications@univ-brest.fr
+"Anglais - B2","07/12/2026 au 17/01/2027",12/02/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Espagnol - B2","07/12/2026 au 17/01/2027",12/02/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Anglais - B2","15/09/2026 au 19/01/2027",12/02/2027,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,cles.pole.langues@univ-brest.fr
+"Anglais - B2","07/09/2027 au 22/10/2027",12/02/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
+"Anglais - B2","01/12/2026 au 18/01/2027",12/02/2027,"UNIVERSITÉ DE MONTPELLIER PAUL-VALERY",cles.umpv.fr,cler@umpv.fr
+"Anglais - B2","16/11/2026 au 04/12/2026",12/02/2027,"UNIVERSITÉ DE PERPIGNAN VIA DOMITIA (UPVD)",,scoclc@univ-perp.fr
 "Anglais - B2","18/01/2027 au 31/01/2027",12/02/2027,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
 "Russe - B1","18/01/2027 au 31/01/2027",12/02/2027,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
 "Russe - B2","18/01/2027 au 31/01/2027",12/02/2027,"UNIVERSITÉ LYON 2 LUMIERE",,vanessa.robles@univ-lyon2.fr
@@ -84,6 +118,9 @@
 "Espagnol - B2","18/01/2027 au 12/02/2027",19/02/2027,"UNIVERSITÉ CLERMONT AUVERGNE",https://www.uca.fr/formation/nos-formations/service-commun-des-langues-vivantes/certifications/cles,
 "Italien - B2","18/01/2027 au 12/02/2027",19/02/2027,"UNIVERSITÉ CLERMONT AUVERGNE",https://www.uca.fr/formation/nos-formations/service-commun-des-langues-vivantes/certifications/cles,
 "Anglais - B1","19/06/2026 au 19/06/2026",25/02/2027,"UNIVERSITÉ DU LITTORAL COTE D'OPALE (ULCO)",https://crl.univ-littoral.fr/,lansad@univ-littoral.fr
+"Anglais - B1","01/12/2026 au 01/02/2027",26/02/2027,"UNIVERSITÉ DE MONTPELLIER PAUL-VALERY",cles.umpv.fr,cler@umpv.fr
+"Portugais - B1","01/12/2026 au 01/02/2027",26/02/2027,"UNIVERSITÉ DE MONTPELLIER PAUL-VALERY",cles.umpv.fr,cler@umpv.fr
+"Anglais - B1","08/12/2026 au 19/12/2026",26/02/2027,"UNIVERSITÉ DE PERPIGNAN VIA DOMITIA (UPVD)",,scoclc@univ-perp.fr
 "Allemand - B1","19/06/2026 au 19/06/2026",26/02/2027,"UNIVERSITÉ DU LITTORAL COTE D'OPALE (ULCO)",https://crl.univ-littoral.fr/,lansad@univ-littoral.fr
 "Espagnol - B1","19/06/2026 au 19/06/2026",26/02/2027,"UNIVERSITÉ DU LITTORAL COTE D'OPALE (ULCO)",https://crl.univ-littoral.fr/,lansad@univ-littoral.fr
 "Allemand - B2","01/09/2026 au 12/02/2027",27/02/2027,"UNIVERSITÉ PARIS NANTERRE",https://mdl.parisnanterre.fr/inscription-aux-certifications,mdl@lce.parisnanterre.fr
@@ -91,10 +128,17 @@
 "Chinois - B1","01/09/2026 au 12/02/2027",27/02/2027,"UNIVERSITÉ PARIS NANTERRE",https://mdl.parisnanterre.fr/inscription-aux-certifications,mdl@lce.parisnanterre.fr
 "Portugais - B2","01/09/2026 au 12/02/2027",27/02/2027,"UNIVERSITÉ PARIS NANTERRE",https://mdl.parisnanterre.fr/inscription-aux-certifications,mdl@lce.parisnanterre.fr
 "Russe - B2","01/09/2026 au 12/02/2027",27/02/2027,"UNIVERSITÉ PARIS NANTERRE",https://mdl.parisnanterre.fr/inscription-aux-certifications,mdl@lce.parisnanterre.fr
+"Chinois - B1","01/12/2026 au 25/01/2027",05/03/2027,"UNIVERSITÉ DE MONTPELLIER PAUL-VALERY",cles.umpv.fr,cler@umpv.fr
+"Russe - B1","01/12/2026 au 01/02/2027",05/03/2027,"UNIVERSITÉ DE MONTPELLIER PAUL-VALERY",cles.umpv.fr,cler@umpv.fr
 "Anglais - B2","07/09/2026 au 10/02/2027",06/03/2027,"SORBONNE UNIVERSITÉ",https://sciences.sorbonne-universite.fr/formation-sciences/offre-de-formation/enseignement-des-langues/cles-certificat-de-competence-en,frederic.menu@sorbonne-universite.fr
 "Allemand - B2","18/01/2027 au 29/01/2027",06/03/2027,"UNIVERSITÉ DE LORRAINE",https://lansad.univ-lorraine.fr/cles/,lansad-certification-contact@univ-lorraine.fr
 "Allemand - B1","04/01/2027 au 28/01/2027",10/03/2027,"UNIVERSITÉ DE ROUEN NORMANDIE",https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/,cles.univ-rouen.fr
 "Espagnol - B1","04/01/2027 au 28/01/2027",10/03/2027,"UNIVERSITÉ DE ROUEN NORMANDIE",https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/,cles.univ-rouen.fr
+"Espagnol - B1","04/01/2027 au 22/01/2027",12/03/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
+"Espagnol - B2","04/01/2027 au 22/01/2027",12/03/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
+"Allemand - B2","08/02/2027 au 14/02/2027",12/03/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Espagnol - B2","01/12/2026 au 08/02/2027",12/03/2027,"UNIVERSITÉ DE MONTPELLIER PAUL-VALERY",cles.umpv.fr,cler@umpv.fr
+"Espagnol - B2","01/12/2026 au 08/02/2027",12/03/2027,"UNIVERSITÉ DE PERPIGNAN VIA DOMITIA (UPVD)",,scoclc@univ-perp.fr
 "Allemand - B2","07/09/2026 au 15/02/2027",13/03/2027,"SORBONNE UNIVERSITÉ",https://sciences.sorbonne-universite.fr/formation-sciences/offre-de-formation/enseignement-des-langues/cles-certificat-de-competence-en,frederic.menu@sorbonne-universite.fr
 "Espagnol - B2","24/06/2026 au 24/06/2026",13/03/2027,"UNIVERSITÉ RENNES II HAUTE BRETAGNE",,
 "Anglais - B2","04/01/2027 au 28/01/2027",17/03/2027,"UNIVERSITÉ DE ROUEN NORMANDIE",https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/,cles.univ-rouen.fr
@@ -110,12 +154,26 @@
 "Allemand - B1","01/02/2027 au 15/02/2027",26/03/2027,"UNIVERSITÉ DE LORRAINE",https://lansad.univ-lorraine.fr/cles/,lansad-certification-contact@univ-lorraine.fr
 "Espagnol - B1","01/02/2027 au 15/02/2027",26/03/2027,"UNIVERSITÉ DE LORRAINE",https://lansad.univ-lorraine.fr/cles/,lansad-certification-contact@univ-lorraine.fr
 "Italien - B1","01/02/2027 au 15/02/2027",26/03/2027,"UNIVERSITÉ DE LORRAINE",https://lansad.univ-lorraine.fr/cles/,lansad-certification-contact@univ-lorraine.fr
+"Allemand - B2","01/12/2026 au 01/03/2027",26/03/2027,"UNIVERSITÉ DE MONTPELLIER PAUL-VALERY",cles.umpv.fr,"cler@umpv.fr "
+"Italien - B2","01/12/2026 au 01/03/2027",26/03/2027,"UNIVERSITÉ DE MONTPELLIER PAUL-VALERY",cles.umpv.fr,cler@umpv.fr
 "Espagnol - B2","04/01/2027 au 28/01/2027",26/03/2027,"UNIVERSITÉ DE ROUEN NORMANDIE",https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/,cles.univ-rouen.fr
 "Italien - B2","04/01/2027 au 28/01/2027",26/03/2027,"UNIVERSITÉ DE ROUEN NORMANDIE",https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/,cles.univ-rouen.fr
 "Italien - B2","04/01/2027 au 28/01/2027",26/03/2027,"UNIVERSITÉ DE ROUEN NORMANDIE",https://maisondeslangues.univ-rouen.fr/certifications-et-tests/cles/,cles.univ-rouen.fr
-"Anglais - B2","15/09/2026 au 05/03/2027",01/04/2027,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,pole.langues.certifications@univ-brest.fr
-"Italien - B1","15/09/2026 au 05/03/2027",02/04/2027,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,pole.langues.certifications@univ-brest.fr
+"Anglais - B2","15/09/2026 au 05/03/2027",01/04/2027,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,cles.pole.langues@univ-brest.fr
+"Italien - B1","15/09/2026 au 05/03/2027",02/04/2027,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,cles.pole.langues@univ-brest.fr
+"Italien - B1","04/01/2027 au 22/01/2027",02/04/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
+"Italien - B2","04/01/2027 au 22/01/2027",02/04/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
+"Anglais - B2","01/12/2027 au 08/03/2027",02/04/2027,"UNIVERSITÉ DE MONTPELLIER PAUL-VALERY",cles.umpv.fr,cler@umpv.fr
 "Anglais - B2","26/02/2027 au 26/03/2027",10/04/2027,"UNIVERSITÉ DE RENNES",https://langues.univ-rennes.fr/,andrea.spaeth-balanant@univ-rennes.fr
+"Portugais - B1","04/01/2027 au 22/01/2027",16/04/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
+"Portugais - B2","04/01/2027 au 22/01/2027",16/04/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
+"Arabe - B1","01/02/2027 au 15/03/2027",16/04/2027,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
+"Espagnol - B1","01/02/2027 au 15/03/2027",16/04/2027,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
+"Grec - B1","01/02/2027 au 15/03/2027",16/04/2027,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
+"Russe - B1","01/02/2027 au 15/03/2027",16/04/2027,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
+"Russe - B2","01/02/2027 au 15/03/2027",16/04/2027,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
+"Russe - B1","01/02/2027 au 08/04/2027",20/04/2027,"UNIVERSITÉ MARIE ET LOUIS PASTEUR",,
+"Russe - B2","01/03/2027 au 08/04/2027",20/04/2027,"UNIVERSITÉ MARIE ET LOUIS PASTEUR",,
 "Allemand - B2","16/03/2027 au 31/03/2027",26/04/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Italien - B1","16/03/2027 au 31/03/2027",26/04/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Italien - B2","16/03/2027 au 31/03/2027",26/04/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
@@ -124,10 +182,61 @@
 "Espagnol - B2","16/03/2027 au 31/03/2027",29/04/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Anglais - B2","16/03/2027 au 31/03/2027",30/04/2027,"UNIVERSITÉ GRENOBLE ALPES",https://sdl.univ-grenoble-alpes.fr/se-certifier/cles-/cles-217437.kjsp,cles@univ-grenoble-alpes.fr
 "Anglais - C1","24/03/2027 au 06/04/2027",12/05/2027,"UNIVERSITÉ DE LORRAINE",https://lansad.univ-lorraine.fr/cles/,lansad-certification-contact@univ-lorraine.fr
+"Arabe - B1","04/01/2027 au 22/01/2027",14/05/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
+"Arabe - B2","04/01/2027 au 22/01/2027",14/05/2027,"UNIVERSITÉ DE CAEN NORMANDIE",https://www.unicaen.fr/formation/nos-formations/certifications/certifications/,intl.certifications@unicaen.fr
+"Espagnol - B2","01/02/2027 au 15/03/2027",14/05/2027,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
 "Anglais - B2","18/02/2027 au 18/04/2027",18/05/2027,"UNIVERSITÉ DE CORSE PASQUALE PAOLI",,clic@univ-corse.fr
+"Arabe - B2","15/03/2027 au 24/03/2027",18/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Italien - B1","15/03/2027 au 24/03/2027",18/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Russe - B1","15/03/2027 au 24/03/2027",18/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Anglais - B1","15/03/2027 au 24/03/2027",19/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Arabe - B1","15/03/2027 au 24/03/2027",19/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Grec - B2","15/03/2027 au 24/03/2027",19/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Polonais - B1","15/03/2027 au 24/03/2027",19/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Anglais - B2","15/03/2027 au 24/03/2027",20/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Espagnol - B1","15/03/2027 au 24/03/2027",20/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Grec - B1","15/03/2027 au 24/03/2027",20/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Italien - B2","15/03/2027 au 24/03/2027",20/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Portugais - B2","15/03/2027 au 24/03/2027",20/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
 "Anglais - B1","18/01/2027 au 12/02/2027",21/05/2027,"UNIVERSITÉ CLERMONT AUVERGNE",https://www.uca.fr/formation/nos-formations/service-commun-des-langues-vivantes/certifications/cles,
 "Espagnol - B1","18/01/2027 au 12/02/2027",21/05/2027,"UNIVERSITÉ CLERMONT AUVERGNE",https://www.uca.fr/formation/nos-formations/service-commun-des-langues-vivantes/certifications/cles,
 "Italien - B1","18/01/2027 au 12/02/2027",21/05/2027,"UNIVERSITÉ CLERMONT AUVERGNE",https://www.uca.fr/formation/nos-formations/service-commun-des-langues-vivantes/certifications/cles,
+"Espagnol - C1","15/03/2027 au 24/03/2027",21/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Italien - C1","15/03/2027 au 24/03/2027",21/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Portugais - B1","15/03/2027 au 24/03/2027",21/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Allemand - B1","01/02/2027 au 15/03/2027",21/05/2027,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
+"FLE - B2","01/02/2027 au 15/03/2027",21/05/2027,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
+"Allemand - B2","01/02/2027 au 15/03/2027",22/05/2027,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
+"Anglais - B2","01/02/2027 au 15/03/2027",22/05/2027,"UNIVERSITÉ DE STRASBOURG",https://lansad.unistra.fr/certifications/cles/,certifications-langues@unistra.fr
+"Allemand - B1","04/01/2027 au 28/02/2027",24/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Allemand - B2","04/01/2027 au 28/02/2027",24/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Arabe - B1","04/01/2027 au 28/02/2027",24/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Arabe - B2","04/01/2027 au 28/02/2027",24/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Chinois - B1","04/01/2027 au 28/02/2027",24/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Espagnol - B1","04/01/2027 au 28/02/2027",24/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Espagnol - B2","04/01/2027 au 28/02/2027",24/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Grec - B1","04/01/2027 au 28/02/2027",24/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Grec - B2","04/01/2027 au 28/02/2027",24/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Italien - B1","04/01/2027 au 28/02/2027",24/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Polonais - B1","04/01/2027 au 28/02/2027",24/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Espagnol - B2","15/03/2027 au 24/03/2027",24/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Anglais - B1","04/01/2027 au 28/02/2027",25/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Italien - B2","04/01/2027 au 28/02/2027",25/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Portugais - B1","04/01/2027 au 28/02/2027",25/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Portugais - B2","04/01/2027 au 28/02/2027",25/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Russe - B1","04/01/2027 au 28/02/2027",25/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Russe - B2","04/01/2027 au 28/02/2027",25/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Anglais - C1","15/03/2027 au 24/03/2027",25/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Anglais - B2","04/01/2027 au 28/02/2027",26/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
 "Anglais - B2","26/02/2027 au 26/04/2027",26/05/2027,"UNIVERSITÉ DE CORSE PASQUALE PAOLI",,clic@univ-corse.fr
 "Italien - B2","26/02/2027 au 26/04/2027",26/05/2027,"UNIVERSITÉ DE CORSE PASQUALE PAOLI",,clic@univ-corse.fr
+"Allemand - C1","04/01/2027 au 28/02/2027",27/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Allemand - C1","04/01/2027 au 28/02/2027",27/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Anglais - C1","04/01/2027 au 28/02/2027",27/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Espagnol - C1","04/01/2027 au 28/02/2027",27/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Italien - C1","04/01/2027 au 28/02/2027",27/05/2027,"UNIVERSITÉ BORDEAUX MONTAIGNE",https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/certification-CL/certification-en-langues-cles-et-clubm-L06HTYJO.html,"dlm @ u-bordeaux-montaigne.fr"
+"Anglais - B1","🔒 Inscriptions réservées",28/05/2027,"UNIVERSITÉ BREST BRETAGNE OCCIDENTALE (UBO)",https://www.univ-brest.fr/pole-langues/fr/page/cles-certificat-de-competences-en-langues-de-lenseignement-superieur,cles.pole.langues@univ-brest.fr
+"Allemand - B1","15/03/2027 au 24/03/2027",28/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Allemand - B2","15/03/2027 au 24/03/2027",28/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
+"Allemand - C1","15/03/2027 au 24/03/2027",29/05/2027,"UNIVERSITÉ DE LILLE",,cles@univ-lille.fr
 "Anglais - C1","19/06/2026 au 19/06/2026",03/06/2027,"UNIVERSITÉ DU LITTORAL COTE D'OPALE (ULCO)",https://crl.univ-littoral.fr/,lansad@univ-littoral.fr
